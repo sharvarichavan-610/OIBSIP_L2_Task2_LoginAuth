@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simple Login Authentication</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- REGISTER PAGE -->
+<div id="registerPage">
+
+<h2>Register</h2>
+
+<input type="text" id="regUser" placeholder="Username">
+<input type="password" id="regPass" placeholder="Password">
+
+<button onclick="registerUser()">Register</button>
+
+<p>Already have account?
+<a onclick="showLogin()">Login</a>
+</p>
+
+</div>
+
+
+<!-- LOGIN PAGE -->
+<div id="loginPage" class="hidden">
+
+<h2>Login</h2>
+
+<input type="text" id="loginUser" placeholder="Username">
+<input type="password" id="loginPass" placeholder="Password">
+
+<button onclick="loginUser()">Login</button>
+
+<p>No account?
+<a onclick="showRegister()">Register</a>
+</p>
+
+</div>
+
+
+<!-- SECURE PAGE -->
+<div id="dashboard" class="hidden">
+
+<h2>Secure Page</h2>
+
+<p>Welcome! You are logged in.</p>
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
